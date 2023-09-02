@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  float temp;
+  char escala;
+  cout << "Digite una temperatura: ";
+  cin >> temp;
+  cout << "¿En qué escala se encuentra?" << "\n";
+  cout << "C = Celsius" << "\n";
+  cout << "F = Fahrenheit" << "\n";
+  cout << "K = Kelvin" << "\n";
+  cin >> escala;
+  switch (escala) {
+    case 'c':
+    case 'C':
+      cout << temp << " grados Celsius corresponden a: " << (temp * 9 / 5) + 32 << " grados Fahrenheit" << "\n";
+      cout << temp << " grados Celsius corresponden a: " << temp + 273.15 << " grados Kelvin" << "\n";
+      break;
+    case 'f':
+    case 'F':
+      cout << temp << " grados Fahrenheit corresponden a: " << (temp - 32) * 5 / 9 << " grados Celsius" << "\n";
+      cout << temp << " grados Fahrenheit corresponden a: " << (temp - 32) * 5 / 9 + 273.15 << " grados Kelvin" << "\n";
+      break;
+    case 'k':
+    case 'K':
+      cout << temp << " grados Kelvin corresponden a: " << (temp - 273.15) << " grados Celsius" << "\n";
+      cout << temp << " grados Kelvin corresponden a: " << (temp - 273.15) * 9 / 5 + 32 << " grados Fahrenheit" << "\n";
+      break;
+    default:
+      cout << "La escala ingresada no es válida" << "\n";
+      break;
+    }
+return 0;
+}
