@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  float cont2, cont, prom, terc, nota;
+  char band;
+  cont2=0;
+  cont=0;
+  do {
+    cout << "Ingrese su nota: ";
+    cin >> nota;
+    cont2 += nota;
+    cont++;
+    cout << "¿Desea agregar otra nota? (S = si, N = no): ";
+    cin >> band;
+  } while (band == 'S' || band == 's');
+  prom = cont2 / cont;
+  terc = prom * 0.20;
+  cout << "Su promedio de tercera nota es: " << prom << "\n";
+  cout << "La equivalencia de su tercera nota en la nota final es: " << terc << "\n";
+return 0;
+}
