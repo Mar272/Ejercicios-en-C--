@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  float num1, num2, res;
+  cout << "Escriba un número: ";
+  cin >> num1;
+  cout<< "Escriba otro número: ";
+  cin >> num2;
+  res = num1 + num2;
+  cout << "La suma de los dos números es: "<< res;
+  return 0;
+}
