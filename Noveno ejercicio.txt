@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  float not1, not2, not3, not4, nota;
+  cout << "Digite su nota de primer previo: ";
+  cin >> not1;
+  cout << "Digite su nota de segundo previo: ";
+  cin >> not2;
+  cout << "Digite su nota de tercer previo: ";
+  cin >> not3;
+  cout << "Digite su nota de examen final: ";
+  cin >> not4;
+  nota = (not1 * 0.25 + not2 * 0.25 + not3 * 0.20 + not4 * 0.30);
+  cout << "La definitiva de su asignatura es: " << nota << "\n";
+return 0;
+}
