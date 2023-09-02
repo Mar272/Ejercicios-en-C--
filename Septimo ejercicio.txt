@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  float lb, gr, kg;
+  cout << "Convertidor de libras a kilogramos y gramos" << "\n";
+  cout << "Digite las libras: ";
+  cin >> lb;
+  gr=lb*453.6;
+  kg=lb*0.45359237;
+  cout << "El valor de: "<< lb <<" libras en kilogramos es: "<< kg << "\n";
+  cout << "El valor de: "<< lb <<" libras en gramos es: "<< gr;
+  return 0;
+}
