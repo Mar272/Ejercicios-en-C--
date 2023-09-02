@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i, num;
+  cout<<"Digite un número el cual sera el fin de un listado desde 1: ";
+  cin >>num;
+  for ( i = 1; i <= num; i++)
+  {
+    cout<< i << "\n";
+  }
+  return 0;
+}
